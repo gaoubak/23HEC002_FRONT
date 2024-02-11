@@ -28,7 +28,7 @@ export default function Header() {
     return (
         <nav className="navbar">
             <div className="navbar-content">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <a className="navbar-brand" href="/home">Home</a>
                 <div className="navbar-nav">
                     <div className="nav-item">
                         <button className="logout-button" onClick={handleLogout}>Logout</button>
