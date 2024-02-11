@@ -40,8 +40,6 @@ export default function MainPage() {
         getSalons();
     }, [])
 
-
-    console.log(salons)
     return (
         <>
             <Header />
@@ -62,10 +60,10 @@ export default function MainPage() {
                                 </div>
                             </CardContent>
                             <CardFooter style={{ display: "flex", justifyContent: "end" }}>
-                                <Button 
-                                    variant="contained" 
+                                <Button
+                                    variant="contained"
                                     onClick={() => {
-                                        navigate("/home/reservation/" + salons[0].id, {state: {salon: salons[0]}});
+                                        navigate("/home/reservation/" + salons[0].id, { state: { salon: salons[0] } });
                                     }}
                                 >
                                     Prendre rendez-vous
@@ -86,9 +84,9 @@ export default function MainPage() {
                             </CardContent>
                             <CardFooter style={{ display: "flex", justifyContent: "end" }}>
                                 <Button
-                                    variant="contained" 
+                                    variant="contained"
                                     onClick={() => {
-                                        navigate("/home/reservation/" + salons[1].id, {state: {salon: salons[1]}});
+                                        navigate("/home/reservation/" + salons[1].id, { state: { salon: salons[1] } });
                                     }}
                                 >
                                     Prendre rendez-vous
@@ -108,9 +106,9 @@ export default function MainPage() {
                             </CardContent>
                             <CardFooter style={{ display: "flex", justifyContent: "end" }}>
                                 <Button
-                                    variant="contained" 
+                                    variant="contained"
                                     onClick={() => {
-                                        navigate("/home/reservation/" + salons[2].id, {state: {salon: salons[2]}});
+                                        navigate("/home/reservation/" + salons[2].id, { state: { salon: salons[2] } });
                                     }}
                                 >
                                     Prendre rendez-vous
