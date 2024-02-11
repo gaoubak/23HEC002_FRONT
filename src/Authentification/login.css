@@ -1,0 +1,68 @@
+.form-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-card {
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.form-signin {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-logo {
+    width: 75%;
+    min-width: 250px;
+    max-width: 350px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 32px;
+}
+
+.sign-in-label {
+    align-self: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-alert{
+    display: none;
+    position: relative;
+    top: -14px;
+    font-size: 11px;
+    color: red;
+}
+
+.form-button{
+    margin-top: 16px !important;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .menu-icon-sizes {
+        font-size: 50px;
+    }
+}
