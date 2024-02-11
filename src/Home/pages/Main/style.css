@@ -1,0 +1,12 @@
+.container {
+    padding: 20px;
+}
+.form-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
