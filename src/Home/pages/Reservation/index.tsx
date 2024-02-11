@@ -12,13 +12,13 @@ export default function Reservation() {
     const [hairDresser, setHairDresser] = useState<HairDresser[]>([]);
     const [selectedHairdresser, setSelectedHairdresser] = useState('');
     const [selectedDate, setSelectedDate] = useState('');
-  
-    const handleHairdresserChange = (event:any) => {
-      setSelectedHairdresser(event.target.value);
+
+    const handleHairdresserChange = (event: any) => {
+        setSelectedHairdresser(event.target.value);
     };
-  
-    const handleDateChange = (event:any) => {
-      setSelectedDate(event.target.value);
+
+    const handleDateChange = (event: any) => {
+        setSelectedDate(event.target.value);
     };
 
     return (
@@ -30,17 +30,17 @@ export default function Reservation() {
                         <CardHeader title={"Prendre une réservation chez " + salonPage.name} />
                     </Card>
                     <CardContent className="m-0 p-0 h-100">
-                        <div style={{ height: "75vh", display:"flex"}}>
+                        <div style={{ height: "75vh", display: "flex" }}>
                             <Grid container spacing={2}>
                                 <Grid item xs={12}>
                                     <FormControl className="formControl">
                                         <InputLabel id="hairdresser-label">Coiffeur</InputLabel>
                                         <Select
-                                        labelId="hairdresser-label"
-                                        id="hairdresser-select"
-                                        value={selectedHairdresser}
-                                        onChange={handleHairdresserChange}
-                                        sx={{ marginBottom: "16px", width: "300px"}}
+                                            labelId="hairdresser-label"
+                                            id="hairdresser-select"
+                                            value={selectedHairdresser}
+                                            onChange={handleHairdresserChange}
+                                            sx={{ marginBottom: "16px", width: "300px" }}
                                         >
                                             {salonPage.hairDressers.map(hairdresser => (
                                                 <MenuItem key={hairdresser.id} value={hairdresser.id}>{hairdresser.name}</MenuItem>
@@ -64,11 +64,7 @@ export default function Reservation() {
                                     <p>Description: {salonPage.description}</p>
                                 </Grid>
                             </Grid>
-                            
-
-                            
                         </div>
-                    
                         <Button variant="contained" type="submit">Réserver</Button>
                     </CardContent>
                 </div>
